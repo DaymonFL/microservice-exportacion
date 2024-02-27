@@ -55,7 +55,7 @@ const Migracion = async (req, res = response) => {
                 acta_alcalde:  element.acta_alcalde
             });
         }));
-        // await scd_casillasSQLite.bulkCreate(datos);
+        await scd_casillasSQLite.bulkCreate(datos);
         const datosSQLite = await scd_casillasSQLite.findAll();
 
         return res.send({

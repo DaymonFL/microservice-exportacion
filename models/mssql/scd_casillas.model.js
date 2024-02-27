@@ -32,10 +32,10 @@ const scd_casillasMSSQL = sqlconnector.define('scd_casillas', {
     acta_jg:{ type: DataTypes.INTEGER },
     acta_dmr:{ type: DataTypes.INTEGER },
     acta_rp:{ type: DataTypes.INTEGER },
-    acta_alcalde:{ type: DataTypes.INTEGER }
+    acta_alcalde:{ type: DataTypes.INTEGER },
 }, 
 {
-    freezeTableName: true
+    freezeTableName: true,
 });
 
 module.exports = {
